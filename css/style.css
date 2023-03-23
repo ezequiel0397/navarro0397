@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: black;
+}
+body {
+  padding-top: 80px;
+}
+h1 {
+  text-align: center;
+  margin: 30px 0px;
+}
+.imagen a + span {
+  margin: 10px;
+  display: block;
+}
+
+.span {
+  display: block;
+}
+img {
+  width: 320px;
+  height: 340px;
+  object-fit: cover;
+  border-radius: 20px 20px 0px 0px;
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .body {
+    background-color: azure;
+  }
+  .carousel-slide {
+    visibility: collapse;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .body {
+    background-color: azure;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .carousel-slide {
+    visibility: visible;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .nav-item {
+    visibility: initial;
+  }
+}
+body .header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15%;
+  height: 70px;
+  top: 0;
+  position: fixed;
+  width: 100%;
+}
+.carrito {
+  filter: invert(100%);
+  width: 45px;
+  height: auto;
+}
+.contenedor {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin-bottom: 20px;
+}
+.contenedor > div {
+  border-radius: 20px;
+}
+
+.informacion {
+  height: 150px;
+  display: contents;
+
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+}
+.informacion > p:first-child {
+  font-size: 25px;
+  font-weight: 300;
+}
+.informacion.precio {
+  font-size: 20px;
+  font-weight: 500;
+}
+.informacion.precio span {
+  font-size: 17px;
+  font-weight: 300;
+}
+.informacion button {
+  width: 10px;
+  height: 35px;
+  border-radius: 10px;
+  border: none;
+
+  font-size: 17px;
+  font-weight: 300;
+  cursor: pointer;
+}
+.d-block w-100 {
+  height: 100%;
+  width: 300px;
+}
+
+.carousel-item img {
+  height: 700px;
+  width: 500px;
+}
+
+.footer {
+  height: 50px;
+  width: 50px;
+  margin: 15px 10px 10px 15px;
+  display: grid;
+}
+.logo {
+  display: block;
+  align-items: center;
+  margin: auto;
+  height: 400px;
+  width: 80%;
+}
